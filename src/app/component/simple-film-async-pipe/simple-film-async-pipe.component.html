@@ -1,0 +1,6 @@
+<h3>Simple Films : asyncPipe</h3>
+
+  <!-- Show films using AsyncPipe -->
+  <div *ngFor="let film of films$ | async">{{film.title}}</div>
+  <div *ngIf="errMsg" class="error">{{errMsg}}</div>
+  <button (click)="add()">Generate movie</button>
